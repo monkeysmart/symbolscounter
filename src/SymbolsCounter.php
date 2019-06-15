@@ -20,7 +20,7 @@ class SymbolsCounter
 	public function count() : int
 	{
 		if (empty($this->str) || ! $this->isValidStr()) {
-			throw new InvalidArgumentException();
+			throw new \InvalidArgumentException();
 		}
 
 		return strlen($this->str);
