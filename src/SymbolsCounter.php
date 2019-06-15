@@ -1,5 +1,5 @@
 <?php
-namespace Monkeysmart\Tools\SymbolsCounter;
+namespace Monkeysmart\Tools;
 
 class SymbolsCounter 
 {
@@ -40,12 +40,4 @@ class SymbolsCounter
 	{
 		return $this->str;
 	}
-}
-
-try {
-	$strObj = new SymbolsCounter();
-	$strObj->setStr("()))(\n)(\t)))(\r");	
-	echo $strObj->count();	
-} catch(InvalidArgumentException $e) {
-	echo $e->getTraceAsString();
 }
